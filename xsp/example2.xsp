@@ -1,0 +1,4 @@
+#!xsp;
+
+var set strhello = "Hello"
+say %strhello%

@@ -1,0 +1,4 @@
+#!xsp;
+
+var set x = "1"
+say "The variable x is equal to " & %x%

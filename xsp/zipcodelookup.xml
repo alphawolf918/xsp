@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+  <zip>31008</zip>
+  <cities>
+    <city>
+      <name>Byron</name>
+      <preferred>P</preferred>
+    </city>
+    <city>
+      <name>Powersville</name>
+      <preferred>A</preferred>
+    </city>
+    <city>
+      <name>Bryon</name>
+      <preferred>N</preferred>
+    </city>
+  </cities>
+  <county>Peach</county>
+  <state>GA</state>
+  <area_code>478</area_code>
+  <fips>13225</fips>
+  <time_zone>EST</time_zone>
+  <daylight_savings>Y</daylight_savings>
+  <latitude>32.6322</latitude>
+  <longitude>-83.7836</longitude>
+  <type>S</type>
+  <population>17868</population>
+</results>

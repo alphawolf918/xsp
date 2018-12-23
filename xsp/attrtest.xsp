@@ -1,0 +1,11 @@
+#!xsp;
+
+fc attrtest.xml with root(root)
+fc attrtest2.xml with root(root)
+
+update attrtest.xml add name["John"],job["Consultant"] to /root
+update attrtest2.xml add email["blah@blah.net"],age["28"] to /root
+
+attrset multi @id="1":/root/name:attrtest.xml,@emailtype="personal":/root/email:attrtest2.xml
+
+say "Successful."

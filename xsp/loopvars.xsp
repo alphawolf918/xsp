@@ -1,0 +1,5 @@
+#!xsp;
+
+clr -v
+for until i=0,i=8 do {var set product[$i] = "Placeholder $i"}
+parse listproducts.xsp

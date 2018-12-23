@@ -1,0 +1,27 @@
+#!xsp
+
+#Main XSP test file.
+
+fc books.xml with root(bookstore)
+
+#Everyday Italian
+append element book@category="cooking" to /bookstore in books.xml
+update books.xml add title["Everyday_Italian"],author["Giada_De_Laurentiis"],year["2005"],price["30.00"] to //book[1]
+attrset @lang="en" to //book[1]/title in books.xml
+
+#Harry Potter
+append element book@category="children" to /bookstore in books.xml
+update books.xml add title["Harry_Potter"],author["J_K._Rowling"],year["2005"],price["29.99"] to //book[2]
+attrset @lang="en" to //book[2]/title in books.xml
+
+#XQuery Book
+append element book@category="web" to /bookstore in books.xml
+update books.xml add title["XQuery_Book"],author["James_McGovern"],author["Per_Bothner"],author["Kurt_Cagle"],author["James_Linn"],author["Vaidyanathan_Nagarajan"],year["2003"],price["49.99"] to //book[3]
+attrset @lang="en" to //book[3]/title in books.xml
+
+#Learning XML
+append element book@category="web"@cover="paperback"@trans="es" to /bookstore in books.xml
+update books.xml add title["Learning_XML"],author["Erik_T._Ray"],year["2003"],price["39.95"] to //book[4]
+attrset @lang="en" to //book[4]/title in books.xml
+
+say "File processed."

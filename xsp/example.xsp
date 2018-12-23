@@ -1,0 +1,5 @@
+#!xsp;
+
+fc methodtest.xml with root(m)
+update methodtest.xml add name["Bob"] to /m
+echo replace(/m/name[1],"Jon",methodtest.xml)

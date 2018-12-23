@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accounts>
+  <employees>
+    <user id="1">
+      <name><![CDATA[daisy johnson]]></name>
+      <code><![CDATA[7288]]></code>
+    </user>
+    <user id="2">
+      <name><![CDATA[lincoln campbell]]></name>
+      <code><![CDATA[2895]]></code>
+    </user>
+  </employees>
+</accounts>

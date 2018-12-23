@@ -1,0 +1,7 @@
+#!xsp;
+
+with info.customer[1] select @id,name,country,age,state from customers2.xml
+out "<br />"
+with book[1] fetch title.@lang from books.xml
+out "<br />"
+with info.customer[1] fetch this.@id from customers2.xml

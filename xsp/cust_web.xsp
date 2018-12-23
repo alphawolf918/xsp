@@ -1,0 +1,14 @@
+#!xsp;
+
+out "ID: "
+fetch info.customer[1].@id from customers2.xml
+out "<br /> Name: "
+fetch info.customer[1].name from customers2.xml
+out "<br /> Age: "
+fetch info.customer[1].age from customers2.xml
+out "<br /> Country: "
+fetch info.customer[1].country from customers2.xml
+out "<br /> State: "
+fetch info.customer[1].state from customers2.xml
+out "<br /> City: "
+fetch info.customer[1].city from customers2.xml

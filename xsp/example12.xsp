@@ -1,0 +1,5 @@
+#!xsp;
+
+var set firstname = "Paul"
+var set lastname = "Shannon"
+say My name is %firstname% var(lastname).

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+  <customer id="1">
+    <name>donnie gill</name>
+    <country>usa></country>
+    <state>new york></state>
+    <city>new york city</city>
+    <age>21</age>
+  </customer>
+</info>

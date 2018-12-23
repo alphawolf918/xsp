@@ -1,0 +1,342 @@
+[COMMANDS]
+
+>> help
+>> ?
+	Prints this help message.
+
+>> #
+	Allows for comments, semicolons no longer necessary.
+
+>> #!xsp;
+	Necessary declaration at the very top of an external XSP (.xsp) file, must end with a semicolon (;) - if this declaration is missing, the file will not be parsed.
+
+>> stop
+>> break
+>> end
+>> exit
+	Any one of these four commands will cause the script to stop executing further once it reaches this statement.
+
+>> create example.xml with root(parent)
+	Creates the file example.xml with parent as the parent node
+
+>> delete example.xml
+	Deletes the example.xml file
+
+>> delete example.xml,example2.xml
+	Deletes all specified XML files, separated by commas.
+
+>> fcheck file.xml with root(parentnode)
+	Checks to see if the specified file exists, then deletes it. Once this is done, it remakes the file with the specified root element.
+
+>> fc
+	An alias of fcheck.
+
+>> comment add "test text" to /element in filename.xml
+	Adds <!-- test text --> to the specified element in filename.xml.
+
+>> select //elem from example.xml
+	Selects and displays the contents of the elem node in example.xml
+
+>> select //elem from example.xml where //elem/name = "example"
+	Searches for and, if successful, displays the value of the desired element, provided it meets the criteria specified by the 'where' clause. Complex variables depend on this functionality.
+
+>> return //element from example.xml
+	Returns the contents of the element node in example.xml, rather than print them.
+
+>> return //elem from example.xml where //elem/name = "example"
+	Searches for and, if successful, returns the value of the desired element, provided it meets the criteria specified by the 'where' clause. Complex variables depend on this functionality.
+	
+>> select //elem1,//elem2,//elem3,//elem4 from file.xml
+	Searches for and displays all values requested, separated by a comma.
+
+>> fetch elem1,elem2,elem3,elem4 from file.xml
+
+>> fetch book.title.@lang from books.xml where book.@category = "children"
+
+>> fetch book from books.xml where this.@category = "cooking"
+	This only works when calling a top-level element. "this" is replaced with //book, in this instance, for example, however it is not needed.
+
+>> with info.customer[1] select @id,name,country,age,state from customers2.xml
+	info.customer[1] is understood to be in front of every element to be pulled from customers2.xml.
+
+>> with book select @category,title.@lang from books.xml where .@category = "cooking"
+
+>> return //elem1,//elem2,//elem3,//elem4 from file.xml
+	Searches for and returns all values requested, via an associative array.
+	(e.g., in PHP:
+	<?php
+		$x = new XSP();
+		$data = $x->Parse("return username,email from users.xml");
+		$username = $data["username"];
+		$email = $data["email"];
+	?>
+	)
+	** NOTE: If the requested element in your query does not exist in the requested file, a DOMInst error will return!
+
+>> ret
+	An alias for return.
+
+>> sel
+	An alias for select.
+
+>> get
+	An alias for select.
+
+>> set attr @name="val" to //elem in example.xml
+	Sets the name attribute's value in the elem tag to val in example.xml
+
+>> attrset @attr="value",@attr2="othervalue" to //singleelement in example.xml
+	Sets all specified attributes to the one given element in example.xml. Currently does not set attributes for more than one element at a time.
+
+>> attrset multi @attr1="value1"://pathToElement1:file1.xml,@attr2="value2"://pathToElement2:file2.xml
+	Sets all specified attributes to their designated files under the given path. Can set multiple attributes at once and set them for several files and paths at a time.
+
+>> echo
+>> out
+>> print
+	An alias of say.
+
+>> rename oldname.xml=newname.xml,oldfilename2.xml=newfilename2.xml
+	Renames files.
+
+>> rn
+	An alias of rename.
+
+>> dir make testdir
+>> dir mk testdir
+	Creates the new testdir directory.
+	
+>> dir mk test/example
+	Creates the folder structure where "test" is the parent folder and "example" is a folder within it.
+
+>> dir mk testdir,testdir2,testdir3,testdir4,testdir5
+	Creates all 5 directories at once.
+
+>> dir rm testdir
+>> dir remove testdir
+>> dir del testdir
+>> dir delete testdir
+	Deletes the testdir directory.
+
+>> dir rn testdir=testdir2,mydir=mydir2
+>> dir rename testdir=testdir2,mydir=mydir2
+	Renames the testdir directory to testdir2.
+
+>> dir list dirname
+>> dir ls dirname
+	Lists the contents of the specified directory.
+
+>> dir empty dirname
+>> dir clear dirname
+	Deletes all files in the specified directory.
+
+>> dir chown dirname newuser
+>> dir chown filename newuser
+	Changes ownership of dirname or filename to the specified user.
+
+>> dir chmod dirname 0777
+>> dir chmod filename 0777
+	Changes permissions of the specified directory or filename to the given parameter.
+
+>> dir move testdir:testdir2,testdir3:testdir4
+>> dir mv testdir:testdir2,testdir3:testdir4
+	Moves the first folder and its contents to the second folder.
+
+>> directory
+	An alias of dir.
+
+>> var set name = "Paul"
+>> var def name = "Paul"
+>> var define name = "Paul"
+	Complex variables: creates a new variable element in bin/variables.xml, setting a name attribute to the name of the variable and a text node to the value of the variable. If the variable exists already, the new data value will overwrite it.
+
+>> var set bookname = eval(return //book[1]/title from books.xml)
+>> var def bookname = eval(return //book[1]/title from books.xml)
+	Complex Variables: sets the bookname variable equal to the value of the first book element's title in books.xml. If the variable exists already, the new data value will overwrite it.
+
+>> var get name
+>> var sel name
+>> var select name
+	Complex variables: searches for and displays the value of the name variable.
+
+>> var return name
+	Complex variables: searches for and returns the value of the name variable.
+
+>> var drop str
+>> var delete str
+	Complex Variables: drops/deletes the specified variable from bin/variables.xml.
+
+>> var clr
+>> var clear
+>> var emp
+>> var empty
+	Clears all Complex Variable data.
+
+>> var ls
+>> var list
+	List all currently set variables.
+
+>> variable
+	An alias of var.
+
+>> append element child to //parent in example.xml
+	Adds the child element as a child node of the parent element
+
+>> append text "This is a string" to //child in example.xml
+>> append string "This is a string" to //child in example.xml
+	Adds the text enclosed in quotes to the child element in example.xml
+
+>> append element client@id="1" to /orders in business.xml
+	Creates the "client" element under the orders root element and then adds the attribute id="1" to it in business.xml.
+
+>> drop //child[1] from example.xml
+	Removes the first child element entirely (along with its children) in example.xml.
+
+>> drop //elem[1],//elem[2] from example.xml
+	Removes all specified elements from example.xml.
+
+>> move //element from file1.xml to //otherelement in file2.xml
+	Moves the VALUE of the 'element' node from file1.xml to the 'otherelement' node in file2.xml. The original node is left empty.
+
+>> copy //element from file1.xml to //otherelement in file2.xml
+	Works exactly like the move command, but leaves the original value.
+
+>> if exists(filename.xml) then {do things}
+	If the specified file exists, then run the XSP code in between the tags.
+
+>> if exists(filename.xml) then {do things} else {do other things instead}
+	If the specified file exists, then run the XSP code in between the tags. If it doesn't, run the second block of code instead.
+
+>> parse example.xsp
+	Parses all XSP commands (that are separated by semicolons) in example.xsp
+	** Even though the user must type out .xsp when parsing, the file will not be parsed if the extension is different - this is both a security measure and a preparation for future versions.
+
+>> run
+	An alias of parse.
+
+>> cparse example.xsp
+	Decompiles and runs a compiled XSP file. After execution, the file is automatically recompiled.
+
+>> crun
+	An alias of cparse.
+
+>> call example
+	Loads and parses the given file - similar to "parse", but .xsp is not required. Can also parse several files at once, separated by commas.
+
+>> goto
+	An alias of call.
+
+>> clearerr()
+	Empties the XSP error log file.
+
+>> clearall()
+	Empties all error logs.
+
+>> clearall() -v
+	Clears ALL data: error logs and complex variables.
+
+>> clear -e
+>> clear errors
+>> clear err
+	Clears the contents of error_log.xml file.
+
+>> clear -v
+>> clear vars
+>> clear variables
+	Clears all Complex Variables.
+
+>> clear -ev
+	Clears all errors and Complex Variables.
+
+>> clear -a
+>> clear all
+	Clears ALL internal data.
+
+>> change nodeValue of //elem to "new value" in example.xml
+	Changes the text of the elem element to new value in example.xml
+	
+>> update file.xml set //element="value"
+	Sets the value of the XPath-valid element and changes its value to "value" (minus quotations).
+
+>> update file.xml set //element="apples",//secondelement="bananas",//thirdelement="grapes",//fourthelement="guavas"
+	Changes the values of the XPath-valid elements to the specified values.
+	
+>> update file.xml add element["value"] to /rootelement
+	Adds the specified element (and the text that it is given) to the rootelement of the file (can be anything XPath-valid).
+
+>> update file.xml add element["apples"],secondelement["bananas"],thirdelement["grapes"],fourthelement["guavas"] to /rootelement
+	Adds all specified elements (and their respective values) to the rootelement of the file (can be anything XPath-valid).
+	
+**** NOTE: When using the UPDATE command to add text to elements in one command, make sure to replace spaces ( ) with underscores (_). You should also note that all text will get converted to lowercase.
+
+>> out "hello world"
+	Prints "hello world" to the browser/console.
+
+>> out "My name is " & var(firstname) & " and I am glad to be here."
+	Prints out multiple messages, delimited by the & operator - quotes are recommended for readability, but not necessary.
+
+>> say
+	An alias of out.
+	
+>> file print from filename.xml
+	Prints the contents of filename.xml to the console.
+
+>> file read from filename.xml
+	Returns the contents of filename.xml, to be stored in a PHP variable.
+
+>> for until i=0,i=8 do {say $i}
+	Sets a local variable (i) to the value of 0, and increments it until it reaches 8. During this incrementing period, the code in the curly brackets (in this case, "say $i") is ran - replacing $i with the value that it currently holds.
+
+>> for until i=0,i=8 {var set product[$i] = "Product $i"}
+	Sets a multi-var variable set for the specified range.
+
+>> for until i=0,i=8 do {var get product[$i]}
+	Fetches and displays all product variables stored from the command above this one.
+	
+>> loop
+	An alias of for.
+
+>> loop thru filename.txt
+	Loop through filename.txt to run XSP commands, each on a new line - semicolon unnecessary.
+
+[MODULES]
+
+>> var(str)
+>> %str%
+	Replaced with the value of the 'str' variable if it exists.
+
+>> add(5,6)
+	Adds the two values together and is replaced with their sum.
+
+>> sum(x,y)
+	Similar to the above, but adds variables together, in this case x and y.
+
+>> sub(6,5)
+	Subtracts 6 from 5.
+
+>> diff(y,x)
+	Subtracts variable x from variable y.
+
+>> valueOf(//xpath/statement,filename.xml)
+	Returns the value of the XPath argument from filename.xml.
+
+>> strtoupper(str)
+	Converts the str variable to uppercase.
+
+>> strtolower(str)
+	Converts the str variable to lowercase.
+
+>> ucfirst(str)
+	Changes the first letter of the str variable to uppercase.
+
+>> ucwords(str)
+	Converts the first letter of every word in the str variable to uppercase.
+
+>> md5(str)
+	Encrypts the value of the str variable.
+
+>> replace(originalStr,newStr,filename.xml)
+	Replaces the old value in filename.xml with the new value and then returns it.
+
+>> empty()
+	For comparing values, equates to " ".

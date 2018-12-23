@@ -1,0 +1,6 @@
+#!xsp;
+#This does not work properly yet.
+
+clr -v
+var set r = "8"
+for until i=0,i=%r% do {say $i}

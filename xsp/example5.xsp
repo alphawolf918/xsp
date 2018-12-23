@@ -1,0 +1,11 @@
+#!xsp;
+
+clr -a
+
+say "The following statement will select the text of the author element from any book matching the category of children:<br /><br />"
+select //book/author from books.xml where //book/@category = "children"
+say "<br /><br />The following statement will now do the exact same using X-Path predicates:<br /><br />"
+select //book[@category="children"]/author from books.xml
+say "<br /><br /> Both statements do the same thing, but have their own separate advantages and disadvantages."
+say "<br /><br />The below example also does this as a new method of fetching data.<br /><br />"
+fetch book.author from books.xml where @category = "children"

@@ -1,0 +1,5 @@
+#!xsp;
+
+#Compiler script, runs catalog.xsp
+cparse catalog.xsp
+say "<br />Compiler finished.<br />"

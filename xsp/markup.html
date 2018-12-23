@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="xspml.css" type="text/css" media="all" />
+ 		<script type="text/javascript" src="jquery.js"></script>
+		<title>XSPML Examples</title>
+	</head>
+	<body>
+		<xresult id="1"></xresult>
+		<xresult id="2"></xresult>
+		
+		<xsp forid="1">
+		out "<strong>Categories:</strong><br />";
+		fetch book[1].@category,book[2].@category,book[3].@category from books.xml;
+		</xsp>
+		
+		<xsp forid="2">
+		clr -v;
+		var set str = "Hello";
+		var set x = "1";
+		var list;
+		</xsp>
+		
+		<pb>
+			Your IP address is <xip></xip>.
+		</pb>
+		
+		<script type="text/javascript" src="xspml.js"></script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="xdata">
+  <table name="users">
+    <row>
+      <field name="username"><![CDATA[1]]><![CDATA[admin]]></field>
+    </row>
+    <row>
+      <field/>
+    </row>
+    <row>
+      <field/>
+    </row>
+    <row>
+      <field/>
+    </row>
+  </table>
+</database>

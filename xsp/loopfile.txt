@@ -1,0 +1,5 @@
+clr -v
+var set x = "15"
+var set y = "21"
+say %x% var(y) & <br />
+say Done.

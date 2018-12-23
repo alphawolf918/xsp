@@ -1,0 +1,4 @@
+#!xsp;
+
+var set str = "Hello"
+say %str%, world!

@@ -1,0 +1,34 @@
+======================================
+Extensive Server Path HOW-TO
+======================================
+
+[VARIABLES]
+
+Storing:
+	>> var set variablename = "value"
+		This will set variablename equal to value (without quotes).
+
+Retrieving:
+	>> var return variablename
+		"Returning" a variable does the same thing as a 'return' statement does in other programming languages - it returns the value for storage in an external variable.
+	
+	>> var get variablename
+		"Getting" a variable prints out its value to the page and/or console.
+	
+	>> var(variablename)
+		This module may be inserted anywhere within an XSP command/script, and it will be replaced with the appropriate value, BEFORE parse-time. As such, commands like the ones below are possible:
+		
+		-- var set str = "Hello";
+		-- var set other_str = var(str);
+		
+		This will store the value of str into other_str, and upon calling "echo var(other_str)" will actually print out the value of str.
+		
+	>> var list
+		This simply prints out all variables and their values. Might be slightly buggy right now.
+	
+[MULTI-VARS]
+
+	XSP doesn't exactly have "arrays" - more accurately, it has "multi-vars", which are like arrays, but function slightly differently.
+	
+	>> for until i=0,i=4 do {var set testvar[$i] = "Value $i"};
+		This command will define four variables: testvar[0] through testvar[3], and assign Value 0 to testvar[0], Value 3 to testvar[3], etc. $i is replaced with its current value within the loop structure, and cannot be accessed from outside this scope. The brackets in testvar are unnecessary - they are simply a convenience to veteran programmers who have worked with arrays before. You could just as easily define a multi-var set without them.

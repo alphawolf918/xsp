@@ -1,0 +1,7 @@
+#!xsp;
+
+clr -a
+fcheck customers2.xml with root(info)
+append tag customer@id="1" to /info in customers2.xml
+update customers2.xml add name["Donnie_Gill"],country["USA"],state["New_York"],city["New_York_City"],age["21"] to //customer[1]
+say "Success."

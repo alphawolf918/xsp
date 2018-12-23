@@ -1,0 +1,5 @@
+#!xsp;
+
+clr -v
+var set firstname = "Paul"
+say My name is  & var(firstname) & " and I am glad to be here."

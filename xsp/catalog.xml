@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog lastupdated="Apr-13-2017">
+  <product image="cardigan.png" description="Cardigan_sweater">
+    <catalog_item category="men's">
+      <item_number><![CDATA[qwz5671]]></item_number>
+      <price><![CDATA[39.95]]></price>
+      <size description="medium">
+        <color_swatch image="red_cardigan.png"><![CDATA[red]]></color_swatch>
+        <color_swatch image="burgundy_cardigan.png"><![CDATA[burgundy]]></color_swatch>
+      </size>
+      <size description="large">
+        <color_swatch image="red_cardigan.png"><![CDATA[red]]></color_swatch>
+        <color_swatch image="burgundy_cardigan.png"><![CDATA[burgundy]]></color_swatch>
+      </size>
+    </catalog_item>
+    <catalog_item category="women's">
+      <item_number><![CDATA[rrx9856]]></item_number>
+      <price><![CDATA[42.50]]></price>
+      <size>
+        <color_swatch image="red_cardigan.png"><![CDATA[red]]></color_swatch>
+        <color_swatch image="navy_cardigan.png"><![CDATA[navy]]></color_swatch>
+        <color_swatch image="burgundy_cardigan.png"><![CDATA[burgundy]]></color_swatch>
+      </size>
+      <size>
+        <color_swatch image="red_cardigan.png"><![CDATA[red]]></color_swatch>
+        <color_swatch image="navy_cardigan.png"><![CDATA[navy]]></color_swatch>
+        <color_swatch image="burgundy_cardigan.png"><![CDATA[burgundy]]></color_swatch>
+        <color_swatch image="black_cardigan.png"><![CDATA[black]]></color_swatch>
+      </size>
+      <size>
+        <color_swatch image="navy_cardigan.png"><![CDATA[navy]]></color_swatch>
+        <color_swatch image="navy_cardigan.png"><![CDATA[black]]></color_swatch>
+      </size>
+    </catalog_item>
+  </product>
+</catalog>

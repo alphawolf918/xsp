@@ -1,0 +1,14 @@
+============================================
+	INSTALLATION
+	[EXTENSIVE SERVER PATH]
+	By Paul Shannon, Jr. / Zollern Wolf
+============================================
+
+1. First, download a PHP-enabled web server, such as WAMPServer (or set up IIS).
+2. Once everything is setup, extract the files from the xsp.zip archive folder.
+3. Place the "xsp" folder inside of the "www" folder.
+4. Start the server and then load your browser (I use Firefox usually).
+5. Type in http://localhost/xsp and hit Enter.
+6. The console should load, and you can now start using XSP commands.
+
+Happy parsing.

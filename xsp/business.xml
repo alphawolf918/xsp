@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orders>
+  <client id="1" name="bob">
+    <plan><![CDATA[bronze]]></plan>
+    <details><![CDATA[this is what i want]]></details>
+  </client>
+</orders>

@@ -1,0 +1,5 @@
+#!xsp;
+
+fc business.xml with root(orders)
+append element client@id="1"@name="Bob" to /orders in business.xml
+update business.xml add plan["bronze"],details["this_is_what_I_want"] to //client[last()]

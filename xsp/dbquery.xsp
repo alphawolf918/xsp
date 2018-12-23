@@ -1,0 +1,7 @@
+#!xsp;
+
+db create database xdata
+db create table xdata.users
+db add field id to xdata.users
+db add field username to xdata.users
+db add row id=1,username=admin to xdata.users

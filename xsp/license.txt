@@ -1,0 +1,22 @@
+Extensive Server Path (XSP) 2.0 (an extension of PHP and XPath)
+    Copyright (C) 2012 - Present (Paul T. Shannon Jr. / Alpha Wolf)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Beta Version
+Configuration settings in xsp.ini
+For questions or comments, e-mail admin@zollernverse.org
+
+  ** Please do not claim this as your own, as I have screenshots and the exact date when I started the project. I will file charges if credit is taken for my work. This license may not change, and this copyright cannot be removed. If either of these are disputed, then this copy is no longer a legal one.
+  ** IF YOU MAKE ANY CHANGES TO THE CODE AND WISH TO UPLOAD IT SEPARATELY, then please reference my original project via hyperlink. Do not claim yours as the "official" version, as that is what mine is. If I happen to see a change I wish to implement into the final version, then I will attempt to contact you to discuss it, so please leave some way for me to contact you as well. This is for your benefit, as I believe in teamwork very heavily. I do not, however, believe in theft. Thank you.

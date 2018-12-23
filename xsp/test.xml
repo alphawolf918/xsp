@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parentnode>
+  <child color="blue"><![CDATA[tom]]></child>
+  <child color="red"><![CDATA[billy]]></child>
+</parentnode>

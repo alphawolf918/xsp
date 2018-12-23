@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<states>
+  <state>
+    <stateabbrv><![CDATA[GA]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[0199]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[GA - GEORGIA NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AL]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0200]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[AL - ALABAMA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AK]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0300]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[AK - ALASKA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AZ]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0400]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[AZ - ARIZONA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AR]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0500]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[AR - ARKANSAS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[CA]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[0699]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[CA - CALIFORNIA - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[CO]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0700]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[CO - COLORADO]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[CT]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0800]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[CT - CONNECTICUT]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[DE]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[0900]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[DE - DELAWARE]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[DC]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[1099]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[DC - DISTRICT OF COLUMBIA - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[FL]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[1199]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[FL - FLORIDA - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[HI]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1200]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[HI - HAWAII]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[ID]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1300]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[ID - IDAHO]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[IL]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1400]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[IL - ILLINOIS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[IN]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1500]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[IN - INDIANA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[IO]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1600]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[IO - IOWA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[IA]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1600]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[IO - IOWA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[KS]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1700]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[KS - KANSAS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[KY]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[1800]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[KY - KENTUCKY]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[LA]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[1999]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[LA - LOUISIANA - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MA]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[2299]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MA - MASSACHUSETTS - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[ME]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2000]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[ME - MAINE]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MD]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[2199]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MD - MARYLAND - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MI]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2300]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MI - MICHIGAN]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MN]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2400]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MN - MINNESOTA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MS]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2500]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MS - MISSISSIPPI]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MO]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2600]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MO - MISSOURI]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[MT]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2700]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[MT - MONTANA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NE]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2800]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NE - NEBRASKA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NV]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[2900]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NV - NEVADA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NH]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3000]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NH - NEW HAMPSHIRE]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NJ]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3100]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NJ - NEW JERSEY]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NM]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[3299]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NM - NEW MEXICO - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NY]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[3399]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NY - NEW YORK - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[NC]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3400]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[NC - NORTH CAROLINA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[ND]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3500]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[ND - NORTH DAKOTA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[OH]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3600]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OH - OHIO]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[OK]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3700]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OK - OKLAHOMA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[OR]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3800]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OR - OREGON]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[PA]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[3900]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[PA - PENNSYLVANIA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[RI]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4000]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[RI - RHODE ISLAND]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[SC]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4100]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[SC - SOUTH CAROLINA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[SD]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4200]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[SD - SOUTH DAKOTA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[TN]]></stateabbrv>
+    <customerclass><![CDATA[GOVT]]></customerclass>
+    <jurisdiction_id><![CDATA[4399]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[TN - TENNESSEE - NO TAX]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[TX]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4400]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[TX - TEXAS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[UT]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4500]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[UT - UTAH]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[VT]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4600]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[VT - VERMONT]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[VA]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4700]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[VA - VIRGINIA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[WA]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4800]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[WA - WASHINGTON]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[WV]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[4900]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[WV - WEST VIRGINA]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[WI]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[5000]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[WI - WISCONSIN]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[WY]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[5100]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[WY - WYOMING]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AE]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[9998]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OVERSEAS SHIPMENTS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AA]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[9998]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OVERSEAS SHIPMENTS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[ON]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[9998]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OVERSEAS SHIPMENTS]]></jurisdiction_desc>
+  </state>
+  <state>
+    <stateabbrv><![CDATA[AP]]></stateabbrv>
+    <customerclass><![CDATA[ALL]]></customerclass>
+    <jurisdiction_id><![CDATA[9998]]></jurisdiction_id>
+    <jurisdiction_desc><![CDATA[OVERSEAS SHIPMENTS]]></jurisdiction_desc>
+  </state>
+</states>

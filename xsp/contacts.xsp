@@ -1,0 +1,6 @@
+#!xsp;
+
+fc contacts.xml with root(info)
+append element contact@id="1"@date=date() to /info in contacts.xml
+update contacts.xml add name["Paul_Shannon"],email["admin@zollernverse.org"],contrib["Created_XSP"],status["Active"],role["Creator"] to //contact[1]
+say "Contacts updated."

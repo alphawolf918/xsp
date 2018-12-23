@@ -1,0 +1,76 @@
+﻿» parse dbquery.xsp
+CMND: parse dbquery.xsp
+
+  » db create database xdata
+CMND: db create database xdata
+
+CMND: fc xdata.xml with root(database)
+
+CMND: if exists(xdata.xml) then {delete xdata.xml}
+
+CMND: delete xdata.xml
+
+CMND: create xdata.xml with root(database)
+
+CMND: attrset @name="xdata" to /database in xdata.xml
+
+CMND: set attr @name="xdata" to /database in xdata.xml
+
+  » db create table xdata.users
+CMND: db create table xdata.users
+
+CMND: append element table to /database in xdata.xml
+
+CMND: attrset @name="users" to //table[last()] in xdata.xml
+
+CMND: set attr @name="users" to //table[last()] in xdata.xml
+
+  » db add field id to xdata.users
+CMND: db add field id to xdata.users
+
+CMND: append element field to //table[@name="users"] in xdata.xml
+
+CMND: attrset @name="id" to //field[last()] in xdata.xml
+
+CMND: set attr @name="id" to //field[last()] in xdata.xml
+
+  » db add field username to xdata.users
+CMND: db add field username to xdata.users
+
+CMND: append element field to //table[@name="users"] in xdata.xml
+
+CMND: attrset @name="username" to //field[last()] in xdata.xml
+
+CMND: set attr @name="username" to //field[last()] in xdata.xml
+
+  » db add row id=1,username=admin to xdata.users
+CMND: db add row id=1,username=admin to xdata.users
+
+CMND: return //field[@name="id"]/parent::*/@name from xdata.xml
+
+CMND: updaten xdata.xml set //field[@name="id"]:1
+
+CMND: return //field[@name="id"] from xdata.xml
+
+CMND: addn text '1' to //field[@name="id"] in xdata.xml
+
+CMND: return //field[@name="username"]/parent::*/@name from xdata.xml
+
+CMND: updaten xdata.xml set //field[@name="username"]:admin
+
+CMND: return //field[@name="username"] from xdata.xml
+
+CMND: addn text 'admin' to //field[@name="username"] in xdata.xml
+
+  » db select username from xdata.users where id = 1
+CMND: db select username from xdata.users where id = 1
+
+CMND: select //table[@name="users"]/field[@name="username"] from xdata.xml where //table[@name="users"]/field[@name="id"] = "1"
+
+admin
+
+=====
+Ideas
+=====
+
+>> select col(username) from table(users) where %tblUsers.id = "1"

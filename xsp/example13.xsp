@@ -1,0 +1,9 @@
+#!xsp;
+#NOTE: This script resets the bin/variables.xml file and then gives it new values.
+
+clr -v
+var set str = "This is a string"
+say "The below is generated using the valueOf() method.<br /><br />"
+say "valueOf(//variable[1],bin/variables.xml)<br /><br />"
+say "This version is done with the var method.<br />"
+say "<br />var(str)"

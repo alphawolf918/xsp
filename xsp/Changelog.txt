@@ -1,0 +1,158 @@
+===================================
+[ Extensive Server Path Changelog ]
+===================================
+
+All changes or additions to any code, file, image, directory or document must be recorded here. Please leave behind your name and the date of the change or addition, as well as what you added or changed, and in descending order (most recent entry on top) - thank you.
+
+[June 2016]
+
+[*] Updated Documentation.txt.
+[*] Added "fetch" and "with" commands.
+	[*] Getting closer to being more object-oriented.
+	- Paul, 6.20.16
+
+[June 2015]
+
+[*] Modified "dir move" command.
+	[*] Now works like dir move dir1:dir2,dir3:dir4, etc
+	- Paul, 6.15.15
+
+[*] Updated Documentation.txt.
+[*] Added in a "dir move" subcommand to move entire directories and files to another directory.
+[*] Updated Documentation.txt.
+[*] Added "empty()" module, alias for " ".
+[*] Improved loading speed a bit and performed some adjustments.
+	- Paul, 6.12.15
+
+[*] Updated Documentation.txt.
+[*] Added support for appending attributes at the same time as elements. (e.g., append element client@id="1" to /orders in business.xml)
+	- Paul, 6.3.15
+
+[May 2015]
+
+[*] Updated Documentation.txt.
+[*] Added support for recursive directory creating to "dir mkdir."
+	- Paul, 5.29.15
+
+[*] Updated Documentation.txt.
+[*] Rename command can now rename multiple files at once, separated by commas.
+	- Paul, 5.8.15
+
+[*] Parsing XSP files no longer writes every single command to the console.
+[*] Updated Documentation.txt.
+[*] Changed :var: to %var% due to compatibility issues.
+[*] Fixed RegEx issue with diff(x,y) method not working properly.
+	- Paul, 5.4.15
+
+[April 2015]
+
+[*] Updated Documentation.txt.
+[*] Variables can now also be accessed with colons, e.g. :name: or :str:.
+[*] Updated Documentation.txt.
+[*] dir mkdir can now make several directories at once, separated by commas.
+[*] 'If' code block structures are now ran in curly brackets {} rather than arrow tags <>.
+	- Paul, 4.30.15
+
+[*] Updated Documentation.txt.
+[*] Removed 'mod' commands and functionality.
+[*] Updated Documentation.txt.
+[*] Added in "cparse" and "crun" commands to run and then recompile compiled XSP files.
+[*] Removed the nqv() function.
+[*] Rewrote some of the XSP files.
+	- Paul, 4.29.15
+
+[*] Semicolons are no longer required, but will not cause problems if used.
+[*] Updated Documentation.txt.
+[*] A question mark "?" can now be sent in place of the "help" command (though both are still supported).
+[*] Started work on "multi-var" structures; XSP's form of "arrays".
+[*] Created how-to.txt.
+[*] Updated Documentation.txt.
+[*] Added in sum(x,y) and diff(y,x) functions for performing mathematical operations on XSP variables.
+[*] Added in a 'call' command (alias 'goto') to parse XSP files without having to type .xsp - can also parse multiple files at once, separated by commas.
+	- Paul, 4.27.15
+
+[*] Updated Documentation.txt.
+[*] Added in a 'thru' sub-command for the 'for' command (which now has the alias of 'loop') to loop through a text file full of XSP commands to be parsed.
+[*] Updated Documentation.txt.
+[*] Added in a 'for' command for more complex looping than before; old 'for' command retired.
+	- Paul, 4.24.15
+
+[*] Added strtoupper(str) and strtolower(str) functions.
+	- Paul, 4.21.15
+
+[*] Added sayr, getr, outr, echor commands to return strings instead of print them.
+[*] Added an md5(str) function.
+	- Paul, 4.20.15
+
+[*] Added a ucwords(str) function to do the same thing as the PHP function.
+[*] Added in a replace(xpath,str,file) method to replace values of certain elements (buggy, uses the 'change' command).
+[*] Added a ucfirst(str) function to do the same thing as the PHP function.
+[*] Updated Documentation.txt.
+[*] "run" was added as an alias of "parse".
+[*] Updated Documentation.txt.
+[*] "get" command has been stripped and added as an alias of "select".
+[*] Updated Documentation.txt.
+[*] Added in "rn" as an alias for "rename".
+[*] "dir rename" now can rename multiple directories at once, separated by commas.
+[*] Updated Documentation.txt.
+[*]	Added alias 'ret' for return, and 'sel' for select.
+[*] Date format settings have been added to xsp.ini.
+[*] XSP functions now live in "modules.php", name may get changed to "functions.php" in the future or before this version is released. More functions will be added.
+[*] Added date() function - parser replaces it with current date.
+	- Paul, 4.17.15
+
+[*] Updated Documentation.txt.
+[*] Removed "returnattr" command altogether.
+[*] "delete" command can now delete multiple files at once, separated by commas.
+	- Paul, 4.15.15
+
+[*] Added multi-drop feature to 'drop' command.
+[*] Updated tutorial.docx.
+[*] Updated Documentation.txt.
+[*] "echo" and "print" now work as aliases of "say" and "out".
+[*] Removed Simplex Variables altogether.
+	- Paul, 4.13.15
+
+[*] Began removal of Simplex Variables.
+[*] Updated Documentation.txt.
+[*] Added a delimeter (&) to concatenate strings using the "say" and "out" commands.
+[*] Updated Documentation.txt.
+[*] Added an attrset.xsp file to test the attrset-multi command.
+[*] Added the "attrset multi" subcommand to add multiple attributes to different elements and files at one time.
+	- Paul, 4.10.15
+
+[*] Added in a contacts.xml file for contibutors to leave contact methods - works via an XSP file.
+[*] Updated Documentation.txt.
+[*] Added:
+		* attrset command to add multiple attributes to a single element on one line.
+		* fcheck command to check if a file exists then perform delete and create actions on it.
+[*] Fixes:
+		* Bug with 'update' command throwing DOMInstance errors when elements existed.
+		* Strings/text with spaces not parsing correctly in 'update' command (now replaces underscores with spaces).
+[WORK BEGINS ON VERSION 2.0]
+	- Paul, 4.6.15
+
+[*] Old example XSP files have been added back.
+	- Paul, 4.4.15
+
+[March 2015]
+
+[*] Updated Documentation.txt.
+[*] Fixed issues:
+		* Return statements not responding correctly.
+		* Multi-return statements not working at all.
+		* Constant 'DOMInst' error due to bad memory file.
+		* Test files not working.
+	- Paul, 3.30.15
+ 
+[*] Added the 'update' command - supports multi-setting and multi-addition (see Documentation.txt for details).
+[*] Fixed issue with multi-return statement not working properly.
+	- Paul, 3.4.15
+		
+[January 2015]
+
+[*] Fixed the variable listing not listing all of the variables properly and mechanics of it work differently now - faster.
+	- Paul, 1.30.15
+		
+[*] Added Changelog.
+	- Paul, 1.28.15

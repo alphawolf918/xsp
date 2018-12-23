@@ -1,0 +1,15 @@
+var file = open lazy XS file to be parsed
+var index = where the parser is at in the file
+while not the end of the stupid file
+	set the parser to this location whether it likes it or not
+	parse a line until a semicolon or a curly bracket is reached because it's too dumb to understand otherwise
+	store this line in the interpreter
+	if this line is in the keyword dictionary then
+		perform action without complaining
+	else
+		throw up
+	end if
+	file = reread from file to remind its brain
+	index = line below this one so no more messes are made
+	ignore any stored lines already in interpreter
+end while

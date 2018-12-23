@@ -1,0 +1,4 @@
+#!xsp;
+
+var set lang = valueOf(//book[1]/title/@lang,books.xml)
+say %lang%

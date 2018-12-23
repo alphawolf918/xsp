@@ -1,0 +1,11 @@
+[System Variables]
+
+version=2.8
+serverName=1291A
+sysDrive=C:
+username=1291A$
+userDomain=DOMAIN-GIGA
+serverName=localhost
+serverOS=Windows_NT
+serverPort=80
+serverAddr=::1

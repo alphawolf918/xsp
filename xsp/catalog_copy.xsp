@@ -1,0 +1,31 @@
+#!xsp;
+
+fcheck catalog.xml with root(catalog)
+
+append element product@image="cardigan.png" to /catalog in catalog.xml
+set attr @lastupdated=date() to /catalog in catalog.xml
+attrset @description=ucwords("cardigan_sweater") to //product[1] in catalog.xml
+append element catalog_item@category="Men's" to //product[1] in catalog.xml
+update catalog.xml add item_number["QWZ5671"],price["39.95"] to //catalog_item[1]
+append element size@description="medium" to //catalog_item[1] in catalog.xml
+update catalog.xml add color_swatch["Red"],color_swatch["Burgundy"] to //size[1]
+attrset multi @image="red_cardigan.png"://color_swatch[1]:catalog.xml,@image="burgundy_cardigan.png"://color_swatch[2]:catalog.xml
+append element size@description="Large" to //catalog_item[1] in catalog.xml
+update catalog.xml add color_swatch["Red"],color_swatch["Burgundy"] to //size[2]
+attrset multi @image="red_cardigan.png"://size[2]/color_swatch:catalog.xml,@image="burgundy_cardigan.png"://size[2]/color_swatch[2]:catalog.xml
+append element catalog_item@category="Women's" to //product[1] in catalog.xml
+update catalog.xml add item_number["RRX9856"],price["42.50"] to //catalog_item[2]
+append element size@description="Small" to //catalog_item[2] in catalog.xml
+update catalog.xml add color_swatch["Red"],color_swatch["Navy"],color_swatch["Burgundy"] to //catalog_item[2]/size[1]
+attrset multi @image="red_cardigan.png"://catalog_item[2]/size/color_swatch[1]:catalog.xml,@image="navy_cardigan.png"://catalog_item[2]/size/color_swatch[2]:catalog.xml,@image="burgundy_cardigan.png"://catalog_item[2]/size/color_swatch[3]:catalog.xml
+append element size@description="Medium" to //catalog_item[2] in catalog.xml
+update catalog.xml add color_swatch["Red"],color_swatch["Navy"],color_swatch["Burgundy"],color_swatch["Black"] to //catalog_item[2]/size[2]
+attrset multi @image="red_cardigan.png"://catalog_item[2]/size[2]/color_swatch[1]:catalog.xml,@image="navy_cardigan.png"://catalog_item[2]/size[2]/color_swatch[2]:catalog.xml,@image="burgundy_cardigan.png"://catalog_item[2]/size[2]/color_swatch[3]:catalog.xml,@image="black_cardigan.png"://catalog_item[2]/size[2]/color_swatch[4]:catalog.xml
+append element size@description="Large" to //catalog_item[2] in catalog.xml
+update catalog.xml add color_swatch["Navy"],color_swatch["Black"] to //catalog_item[2]/size[3]
+attrset multi @image="navy_cardigan.png"://catalog_item[2]/size[3]/color_swatch[1]:catalog.xml,@image="navy_cardigan.png"://catalog_item[2]/size[3]/color_swatch[2]:catalog.xml
+append element size@description=ucwords("extra_large") to //catalog_item[2] in catalog.xml
+update catalog.xml add color_swatch["Burgundy"],color_swatch["Black"] to //catalog_item[2]/size[4]
+attrset multi @image="burgundy_cardigan.png"://catalog_item[2]/size[4]/color_swatch[1]:catalog.xml,@image="black_cardigan.png"://catalog_item[2]/size[4]/color_swatch[2]:catalog.xml
+
+say "Finished."

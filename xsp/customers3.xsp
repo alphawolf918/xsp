@@ -1,0 +1,9 @@
+#!xsp;
+
+clr -a
+fcheck customers2.xml with root(info)
+update customers2.xml add name["Daisy_Johnson"],age["26"],state["SomeState"],city["SomeCity"] to /info
+set attr @id="1" to //name[1] in customers2.xml
+out "Updating data.."
+update customers2.xml set state="New_York",city="NYC"
+out "<br />Data updated"

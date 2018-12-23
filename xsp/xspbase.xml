@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database>
+  <table name="users">
+    <field name="id" type="int">1</field>
+    <field name="username" type="string">zollernwolf</field>
+    <field name="password" type="password">xsp2448</field>
+    <field name="age" type="int">25</field>
+    <field name="join_date" type="timestamp">07-13-2016</field>
+  </table>
+</database>

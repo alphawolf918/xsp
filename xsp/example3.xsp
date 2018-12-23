@@ -1,0 +1,8 @@
+#!xsp;
+#Creates accounts and adds them to the XML database
+
+fc accounts.xml with root(accounts)
+append element employees to /accounts in accounts.xml
+for until i=0,i=2 do {append element user@id=add($i,1) to /accounts/employees in accounts.xml}
+update accounts.xml add name["Daisy_Johnson"],code["7288"] to //user[1]
+update accounts.xml add name["Lincoln_Campbell"],code["2895"] to //user[2]

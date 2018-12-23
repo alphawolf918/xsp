@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+  <book category="cooking">
+    <title lang="en"><![CDATA[everyday italian]]></title>
+    <author><![CDATA[giada de laurentiis]]></author>
+    <year><![CDATA[2005]]></year>
+    <price><![CDATA[30.00]]></price>
+  </book>
+  <book category="children">
+    <title lang="en"><![CDATA[harry potter]]></title>
+    <author><![CDATA[j k. rowling]]></author>
+    <year><![CDATA[2005]]></year>
+    <price><![CDATA[29.99]]></price>
+  </book>
+  <book category="web">
+    <title lang="en"><![CDATA[xquery book]]></title>
+    <author><![CDATA[james mcgovern]]></author>
+    <author><![CDATA[per bothner]]></author>
+    <author><![CDATA[kurt cagle]]></author>
+    <author><![CDATA[james linn]]></author>
+    <author><![CDATA[vaidyanathan nagarajan]]></author>
+    <year><![CDATA[2003]]></year>
+    <price><![CDATA[49.99]]></price>
+  </book>
+  <book category="web" cover="paperback" trans="es">
+    <title lang="en"><![CDATA[learning xml]]></title>
+    <author><![CDATA[erik t. ray]]></author>
+    <year><![CDATA[2003]]></year>
+    <price><![CDATA[39.95]]></price>
+  </book>
+</bookstore>

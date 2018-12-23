@@ -1,0 +1,11 @@
+#!xsp
+
+clr -v
+var set x = "5"
+var set y = "4"
+var set z = "sum(x,y)"
+var set t = "6"
+var set u = "4"
+var set v = "sum(t,u)"
+var set final = "sum(v,z)"
+var get final
